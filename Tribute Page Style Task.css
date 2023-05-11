@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FBF1D3;
+}
+
+
+.container {
+    width: 65%;
+    margin-inline: auto;
+    margin-block: 50px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    background-color: #ceb792;
+    cursor: pointer;
+}
+
+.img {
+    width: 400px;
+    height: 400px;
+    margin-inline: auto;
+    border-radius: 50%;
+    box-shadow: 8px 8px 0px 0px rgba(88, 88, 88, 0.425),
+        -8px -8px 0px 0px rgba(255, 255, 255, 0.425);
+    animation: come-go 3s ease-in-out infinite;
+}
+
+@keyframes come-go {
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(1);
+    }
+
+}
+
+.profile-pic {
+    object-fit: cover;
+    clip-path: circle();
+}
+
+.title h1 {
+    text-transform: capitalize;
+    margin: 20px;
+}
+
+.sub-title p {
+    margin-top: 30px;
+}
+
+.cricket-info {
+    width: 70%;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 15px auto;
+}
+
+.same-h2 {
+    margin: 25px 10px 10px 10px;
+    text-transform: capitalize;
+}
+
+.same-para {
+    text-align: justify;
+    line-height: 40px;
+    text-indent: 100px;
+    font-size: 20px;
+    margin: 4px;
+    word-spacing: 5px;
+}
+
+.personal-life {
+    width: 70%;
+    border: 1px solid black;
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.achievments {
+    width: 96%;
+    border: 1px solid black;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+.achievment-img {
+    width: 80%;
+    margin: 15px auto;
+}
+
+.achievment-text {
+    width: 50%;
+    margin: 15px auto;
+}
+
+.achievment-text ul {
+    list-style: none;
+}
+
+.achievment-text li {
+    text-align: justify;
+    line-height: 40px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.nav {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: black;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.nav a {
+    margin-inline: 30px;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+
+}
+
+.nav a:hover {
+    background-color: #c18a3b
+}
+
+.special-words {
+    width: 70%;
+    font-size: 1.2rem;
+    margin: 15px auto;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.same-div {
+    border-radius: 30px;
+    box-shadow: 8px 8px 0px 0px rgba(88, 88, 88, 0.425);
+}
+
+.same-div:hover {
+    background-color: #C0EEE4;
+}
+
+.same-font {
+    font-family: 'Kanit', sans-serif;
+}
+
+.inner-font {
+    font-family: 'PT Sans', sans-serif;
+}
